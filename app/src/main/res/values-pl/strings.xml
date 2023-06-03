@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">yamp</string>
+    <string name="notification_channel">Teraz odtwarzane</string>
+    <string name="notification_channel_description">Która piosenka jest aktualnie odtwarzana</string>
+    <string name="notification_skip_to_previous">Poprzedni utwór</string>
+    <string name="notification_skip_to_next">Następny utwór</string>
+    <string name="notification_play">Odtwarzaj</string>
+    <string name="notification_pause">Pauza</string>
+    <string name="error_media_not_found">Nie udało się zlokalizować żadanych mediów</string>
+    <string name="generic_error">W aplikacji wystąpił błąd</string>
+    <string name="missing_permissions">Przyznaj uprawnienia, aby korzystać z aplikacji</string>
+    <string name="theme">motyw</string>
+    <string name="light">Jasny</string>
+    <string name="dark">Ciemny</string>
+    <string name="system">Systemowy</string>
+    <string name="search">Szukaj</string>
+    <string name="unknown_artist">Nieznany wykonawca</string>
+    <string name="random">Losowo</string>
+    <string name="repeat">Powtarzane</string>
+    <string name="looped">Zapętlone</string>
+</resources>
