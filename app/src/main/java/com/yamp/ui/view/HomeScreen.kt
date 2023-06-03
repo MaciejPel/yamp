@@ -6,6 +6,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.aspectRatio
@@ -105,7 +106,7 @@ fun HomeScreen(
 				}
 			}
 
-			LazyColumn(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+			LazyColumn() {
 				items(audioViewModel.audioList.filter {
 					it.displayName.lowercase().contains(audioViewModel.query.lowercase())
 				}) { audio: Audio ->
@@ -139,6 +140,9 @@ fun AudioItem(
 	Row(
 		Modifier
 			.fillMaxWidth()
+			.background(
+				if (active) MaterialTheme.colorScheme.inversePrimary else Color.Unspecified,
+			)
 			.clickable {
 				onItemClick.invoke(audio.id)
 				navController.navigate(NavigationScreen.Player.route)
@@ -166,9 +170,8 @@ fun AudioItem(
 					Text(
 						text = audio.displayName,
 						fontWeight = FontWeight.SemiBold,
-						style = MaterialTheme.typography.headlineSmall,
+						style = MaterialTheme.typography.titleMedium,
 						overflow = TextOverflow.Clip,
-						color = if (active) MaterialTheme.colorScheme.inversePrimary else Color.Unspecified,
 						maxLines = 1
 					)
 					Text(
@@ -177,7 +180,6 @@ fun AudioItem(
 						style = MaterialTheme.typography.bodySmall,
 						maxLines = 1,
 						overflow = TextOverflow.Clip,
-						color = if (active) MaterialTheme.colorScheme.inversePrimary else Color.Unspecified,
 					)
 				}
 			}

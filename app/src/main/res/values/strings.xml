@@ -12,12 +12,12 @@
     <string name="generic_error">The application has encountered an unexpected error</string>
     <string name="missing_permissions">Grant permissions to use this app</string>
     <string name="theme">theme</string>
-    <string name="light">light</string>
-    <string name="dark">dark</string>
-    <string name="system">system</string>
+    <string name="light">Light</string>
+    <string name="dark">Dark</string>
+    <string name="system">System</string>
     <string name="search">Search</string>
     <string name="unknown_artist">Unknown artist</string>
-    <string name="random">random</string>
-    <string name="repeat">repeat</string>
-    <string name="looped">looped</string>
+    <string name="random">Random</string>
+    <string name="repeat">Repeat</string>
+    <string name="looped">Looped</string>
 </resources>
