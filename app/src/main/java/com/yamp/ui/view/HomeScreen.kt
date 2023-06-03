@@ -1,4 +1,4 @@
-package com.yamp.ui.audio
+package com.yamp.ui.view
 
 import android.Manifest
 import androidx.compose.foundation.Image
@@ -6,7 +6,6 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.aspectRatio
@@ -46,7 +45,6 @@ import com.google.accompanist.permissions.ExperimentalPermissionsApi
 import com.google.accompanist.permissions.rememberPermissionState
 import com.yamp.R
 import com.yamp.data.model.Audio
-import com.yamp.ui.view.NavigationScreen
 import com.yamp.ui.viewmodel.AudioViewModel
 import kotlin.math.floor
 

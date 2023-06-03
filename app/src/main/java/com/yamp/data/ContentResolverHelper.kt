@@ -1,15 +1,11 @@
 package com.yamp.data
 
-import android.app.RecoverableSecurityException
 import android.content.ContentUris
 import android.content.Context
 import android.database.Cursor
-import android.os.Build
 import android.provider.MediaStore
 import android.util.Log
 import androidx.annotation.WorkerThread
-import androidx.core.net.toFile
-import androidx.core.net.toUri
 import com.yamp.data.model.Audio
 import dagger.hilt.android.qualifiers.ApplicationContext
 import java.io.File

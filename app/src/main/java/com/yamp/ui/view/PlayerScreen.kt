@@ -36,7 +36,6 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.yamp.R
 import com.yamp.media.exoplayer.PlaybackMode
-import com.yamp.ui.audio.timeStampToDuration
 import com.yamp.ui.viewmodel.AudioViewModel
 
 @Composable
