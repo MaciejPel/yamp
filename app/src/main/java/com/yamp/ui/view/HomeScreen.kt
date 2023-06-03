@@ -184,10 +184,7 @@ fun AudioItem(
 				}
 			}
 		}
-		Text(
-			text = timeStampToDuration(audio.duration.toLong()),
-			color = if (active) MaterialTheme.colorScheme.inversePrimary else Color.Unspecified,
-		)
+		Text(text = timeStampToDuration(audio.duration.toLong()))
 		Spacer(modifier = Modifier.size(16.dp))
 	}
 }
